@@ -1,0 +1,11 @@
+/*
+!/.gitignore
+!/.gitattributes
+!/.github/
+!/OverlayMap_Outlines.toc
+!/README.md
+!/CHANGELOG.md
+!/LICENSE
+!/Outlines/
+/Outlines/*
+!/Outlines/*.blp
