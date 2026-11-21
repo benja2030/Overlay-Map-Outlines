@@ -9,4 +9,7 @@
 !/Outlines/
 /Outlines/*
 !/Outlines/*.blp
-!/docs/
+!/CaveList.lua
+!/Caves/
+/Caves/*
+!/Caves/*.blp

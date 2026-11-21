@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0-beta (2026-11-21)
+
+- Caves: lines for 287 caves, mines and underground places, shown inside them with OpenMap (Overlay Map 1.2.2 or later). Their walls and water, from the pictures the game's minimap draws each cave with; for the caves with a Blizzard cave map, the edge of its map (from OpenMap's cave masks, MIT licence).
+
 ## 0.2.1-beta (2026-11-20)
 
 - Elwynn Forest: a road by Forest's Edge that doesn't exist (a patch of dirt joined to the road) is gone.
