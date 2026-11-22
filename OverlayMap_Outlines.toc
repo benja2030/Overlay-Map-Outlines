@@ -2,7 +2,7 @@
 ## Title: Overlay Map: Outlines (beta)
 ## Notes: The pictures for Overlay Map's Outlines style: white lines of cliffs, water and roads, and of caves. Loaded only when that style is chosen.
 ## Author: benja2030
-## Version: 0.3.0-beta
+## Version: 0.3.1-beta
 ## Dependencies: OverlayMap
 ## LoadOnDemand: 1
 ## X-Credits: cave map outlines from OpenMap's cave masks (MIT licence)

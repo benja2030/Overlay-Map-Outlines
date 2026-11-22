@@ -69,7 +69,10 @@ jobs:
           # Addon files: the .toc, the pictures
           cp "$ADDON.toc" "$OUT/"
           cp -r Outlines "$OUT/"
-          
+          # (the caves' lines and their list)
+          if [ -d Caves ]; then cp -r Caves "$OUT/"; fi
+          if [ -f CaveList.lua ]; then cp CaveList.lua "$OUT/"; fi
+
           if [ -f LICENSE ]; then cp LICENSE "$OUT/LICENSE.txt"; fi
           if [ -f CHANGELOG.md ]; then cp CHANGELOG.md "$OUT/CHANGELOG.md"; fi
 
@@ -85,6 +88,15 @@ jobs:
           if [ "$COUNT" -lt 40 ]; then
             echo "Too few pictures in Outlines ($COUNT): check the folder was committed in full."
             exit 1
+          fi
+          # (the .toc loads CaveList.lua: without it, or without the pictures, the caves have no lines)
+          if grep -q "CaveList.lua" "$OUT/$ADDON.toc"; then
+            CAVES=$(ls "$OUT/Caves"/*.blp 2>/dev/null | wc -l)
+            echo "Caves: $CAVES pictures"
+            if [ ! -f "$OUT/CaveList.lua" ] || [ "$CAVES" -lt 200 ]; then
+              echo "CaveList.lua or the Caves pictures are missing: check they were committed."
+              exit 1
+            fi
           fi
 
           cd build

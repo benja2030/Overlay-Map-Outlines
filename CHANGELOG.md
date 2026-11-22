@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1-beta (2026-11-22)
+
+- Fixed: the caves' lines (CaveList.lua and the Caves folder) were missing from the 0.3.0-beta package, so caves had no lines and the game showed "Error loading CaveList.lua" at login.
+
 ## 0.3.0-beta (2026-11-21)
 
 - Caves: lines for 287 caves, mines and underground places, shown inside them with OpenMap (Overlay Map 1.2.2 or later). Their walls and water, from the pictures the game's minimap draws each cave with; for the caves with a Blizzard cave map, the edge of its map (from OpenMap's cave masks, MIT licence).
