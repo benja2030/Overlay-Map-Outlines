@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.2-beta (not released yet)
+
+- Better lines in 35 of the 39 caves with a Blizzard cave map (Shadowthread Cave, Fargodeep Mine, Jasperlode Mine, the Deadmines...): they only had a rough line round the whole cave; now their walls, pillars and side chambers, traced from the game's own drawing of each cave. Palemane Rock, the two Ban'ethil Barrow Den maps and the first Maraudon map keep the old line for now.
+- Cave entrances are open: in 26 caves with a cave map (Shadowthread Cave, Fel Rock, Fargodeep Mine, the Deadmines...) the cave's line no longer runs across the way out, so the entrance doesn't look like another wall. On the zone's map too, the cliff line has a gap at 16 of those entrances.
+- Overlay Map's logo next to it in the game's AddOns list.
+
 ## 0.3.1-beta (2026-11-22)
 
 - Fixed: the caves' lines (CaveList.lua and the Caves folder) were missing from the 0.3.0-beta package, so caves had no lines and the game showed "Error loading CaveList.lua" at login.
